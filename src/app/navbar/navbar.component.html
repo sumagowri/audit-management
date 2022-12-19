@@ -1,0 +1,16 @@
+<div class="container">
+  <h2>Audit Management</h2>
+  <div class="nav">
+    <ul class="nav-ul">
+      <!-- <li class="nav-item">
+        <a href="/dashboard">Stocks</a>
+      </li> -->
+      <li class="nav-item" *ngIf="user.logStatus">
+        <a>{{ user.username | titlecase }}</a>
+      </li>
+      <li class="nav-item" *ngIf="user.logStatus">
+        <a (click)="logout()">Sign Out</a>
+      </li>
+    </ul>
+  </div>
+</div>

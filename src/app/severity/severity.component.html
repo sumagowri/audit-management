@@ -1,0 +1,41 @@
+<app-navbar></app-navbar>
+<div class="main">
+  <div class="container">
+    <div class="item" *ngIf="status.length > 0"><h1>Audit Result</h1></div>
+    <div class="ietm" *ngIf="status.length > 0">
+      <h2>Project Details</h2>
+      <table class="tab">
+        <tr>
+          <th>Audit-Tracking-Id</th>
+          <th>Project-Manager Name</th>
+          <th>Project Name</th>
+        </tr>
+        <tr>
+          <td>{{ auditResponse.auditId }}</td>
+          <td>{{ auditResponse.managerName }}</td>
+          <td>{{ auditResponse.projectName }}</td>
+        </tr>
+      </table>
+    </div>
+    <div class="ietm" *ngIf="status.length > 0">
+      <h2>Audit Details</h2>
+      <table class="tab1">
+        <tr>
+          <th>Project Execution Status</th>
+          <th>Remedial Action</th>
+        </tr>
+        <tr>
+          <td>
+            <div class="span m-auto" [style.background]="status">
+              {{ auditResponse.projectExecutionStatus }}
+            </div>
+          </td>
+          <td>{{ this.auditResponse.remedialActionDuration }}</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <a class="endbtn" routerLink="../checklist" *ngIf="status.length > 0">
+    <button *ngIf="status.length > 0">Back to CheckList</button>
+  </a>
+</div>

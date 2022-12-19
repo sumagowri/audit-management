@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    font-family:sans-serif;
+    height: 88vh;
+    width:100%;
+    background: linear-gradient(36deg, rgba(0,0,0,1) 0%,  #00d4ff 180%); 
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+.form{
+    height: 20vh;
+    width: 75%;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
+    display: flex;
+    flex-direction:row ;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+label{
+    font-size: 20px;
+    padding: 2px 5px;
+    margin: 0px 15px;
+}
+
+
+select{
+    font-size: 15px;
+    padding: 2px 5px;
+    margin: 0px 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+button{
+    padding: 10px 15px;
+    /* margin: 2px 15px; */
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    background-color: #00ffff;
+    border: 1px solid black;
+    color: black;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover{
+    border: 1px solid #00ffff;
+    color: #00ffff;
+    background-color: black;
+}
+.items{
+    height: 45vh;
+    width: 75%;
+    background-color: black;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+}
+.quest{
+    height: 95%;
+    width: 98%;
+    overflow-y: scroll;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 2px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: #000000; 
+}
+   
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+table{
+    padding: 5px;
+    margin: 10px 20px;
+    border-collapse: collapse;
+    width: 95%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+tr{
+    width: 100%;
+}
+th{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    padding: 12px 5px;
+    font-size: 18px;
+    background: black;
+    border-bottom: 1px solid rgb(143, 142, 142);
+}
+
+td{
+    padding: 12px 5px;
+    font-size: 16px;
+    /* text-align: center; */
+    color: white;
+    border-bottom: 1px solid rgb(143, 142, 142);
+}
+
+.btn{
+    padding: 6px 9px;
+    cursor: pointer;
+    outline: none;
+    background-color: red;
+    color: white;
+}
+
+.butn{
+    padding: 6px 9px;
+    cursor: pointer;
+    color: white;
+    outline: none;
+    background-color: green;
+}
